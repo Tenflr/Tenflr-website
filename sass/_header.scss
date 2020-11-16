@@ -1,0 +1,60 @@
+.header {
+  grid-column: full-start/full-end;
+  padding: 8rem 0;
+  color: $color-secondary;
+
+  @include respond(tab-port) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  &__block {
+    grid-column: center-start/center-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__msg {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    flex: 6;
+
+    @include respond(tab-port) {
+      align-items: center;
+      flex-basis: 55%;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    &--title {}
+    &--catch-phrase {}
+    &--get-app {
+      display: flex;
+    }
+  }
+  &__app-view {
+    flex: 4;
+    display: flex;
+    align-items: center;
+
+    &--img {
+      height: 55rem;
+      width: auto;
+      transform: rotate(12deg);
+      transform-origin: bottom;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+.download-link {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 4rem;
+  }
+}
