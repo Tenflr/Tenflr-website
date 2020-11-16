@@ -1,0 +1,29 @@
+.card-why {
+  width: 85%;
+  padding: 4rem 2rem;
+
+  background-color: $color-white;
+  font-family: $font-primary--2;
+  border-radius: 1rem;
+  box-shadow: $box-shadow-black-subtle;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  transition: all .2s;
+
+  &__icon {
+    width: 7rem;
+    height: 7rem;
+    background-color: $color-secondary;
+    align-self: center;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-grey-subtle;
+    border-color: $color-grey-light-1;
+  }
+  &__text {}
+}

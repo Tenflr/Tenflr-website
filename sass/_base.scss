@@ -1,0 +1,59 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+$font-primary--1: 'Dosis', sans-serif;
+$font-primary--2: 'Fjord One', serif;
+$font-display: 'Nunito Sans', sans-serif;
+
+// SHADOW VARIABLES
+$box-shadow-black-normal: 0 .1rem .1rem 0 rgba($color-black, .14), 0 .2rem .1rem -.1rem rgba($color-black, .12), 0 .1rem .3rem 0 rgba($color-black, .20);
+$box-shadow-black-subtle: rgba(0, 0, 0, 0.08) 0 0 3px 0;
+$box-shadow-black-subtler: 0 .2rem 2.4rem -.2rem rgba(0, 0, 0, .14);
+$box_shadow-black-extra-subtle: 0 .125rem .1875rem -.125rem rgba(0,0,0,.2);
+
+$box-shadow-grey-subtle: 0 .5rem 1rem 0 $color-grey-light-1;
+$box-shadow-grey-subtler: 0 .2rem .4rem 0 $color-grey-light-1;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% => 1rem = 10px
+  @include respond(tab-land) { // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-land-small) { // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+body {
+  position: relative;
+}

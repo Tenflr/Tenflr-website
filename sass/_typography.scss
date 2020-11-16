@@ -1,0 +1,28 @@
+body {
+  font-family: $font-display;
+  color: $color-secondary;
+  font-size: 1.8rem;
+}
+
+.heading--primary {
+  font-family: $font-primary--2;
+  font-size: 5rem;
+}
+.heading--tertiary {
+  font-family: $font-primary--1;
+  font-size: 2.3rem;
+}
+
+.text-desc {
+  font-size: 2rem;
+  font-family: $font-display;
+}
+
+.section--title {
+  font-size: 3.5rem;
+  font-family: $font-primary--1;
+}
+
+.text--normal {
+  line-height: 1.8;
+}
