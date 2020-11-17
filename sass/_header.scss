@@ -25,6 +25,7 @@
       flex-basis: 55%;
       text-align: center;
       margin-top: 5rem;
+      padding-right: 0;
     }
 
     &--title {}
@@ -52,9 +53,21 @@
   }
 }
 
+.download-link__list {
+  display: flex;
+  @include respond(phone-small) {
+    flex-direction: column;
+  }
+}
+
 .download-link {
   display: inline-block;
   &:not(:last-child) {
     margin-right: 4rem;
+
+    @include respond(phone-small) {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
   }
 }
