@@ -68,7 +68,8 @@ body {
         align-items: center;
         flex-basis: 55%;
         text-align: center;
-        margin-top: 5rem; } }
+        margin-top: 5rem;
+        padding-right: 0; } }
     .header__msg--get-app {
       display: flex; }
   .header__app-view {
@@ -85,10 +86,20 @@ body {
         display: none;
         visibility: hidden; } }
 
+.download-link__list {
+  display: flex; }
+  @media only screen and (max-width: 26.5em) {
+    .download-link__list {
+      flex-direction: column; } }
+
 .download-link {
   display: inline-block; }
   .download-link:not(:last-child) {
     margin-right: 4rem; }
+    @media only screen and (max-width: 26.5em) {
+      .download-link:not(:last-child) {
+        margin-right: 1rem;
+        margin-left: 1rem; } }
 
 .feature {
   display: flex;
