@@ -167,8 +167,8 @@ body {
   .card-why__icon {
     width: 7rem;
     height: 7rem;
-    background-color: #101d2c;
-    align-self: center; }
+    align-self: center;
+    fill: #101d2c; }
   .card-why:hover {
     box-shadow: 0 0.5rem 1rem 0 #f9f7f6;
     border-color: #f9f7f6; }
@@ -230,32 +230,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .section-get-app__content {
         width: 85%; } }
-
-.footer {
-  padding: 8rem 0;
-  background-color: #101d2c;
-  color: #f9f7f6; }
-  @media only screen and (max-width: 56.25em) {
-    .footer {
-      padding-right: 3rem;
-      padding-left: 3rem; } }
-  .footer__content {
-    grid-column: center-start/center-end;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-  .footer--copyright {
-    font-size: 1.4rem; }
-  .footer--social {
-    list-style: none; }
-
-.social__item {
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  background-color: #f9f7f6; }
-  .social__item:not(:last-child) {
-    margin-right: 1.5rem; }
 
 .menu__checkbox {
   display: none;
@@ -382,8 +356,7 @@ body {
       padding-left: 3rem; } }
   .navigation__icon {
     width: 5rem;
-    height: 5rem;
-    background-color: #101d2c; }
+    height: 5rem; }
 
 .nav {
   align-self: flex-end;
@@ -439,7 +412,35 @@ body {
 .u-margin-bottom-large {
   margin-bottom: 12rem !important; }
 
-.icon__download-app {
-  height: 7rem;
-  width: 20rem;
+.icon {
   fill: #101d2c; }
+  .icon__download-app {
+    height: 7rem;
+    width: 20rem;
+    fill: #101d2c; }
+
+.footer {
+  padding: 8rem 0;
+  background-color: #101d2c;
+  color: #f9f7f6; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
+  .footer__content {
+    grid-column: center-start/center-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer--copyright {
+    font-size: 1.4rem; }
+  .footer--social {
+    list-style: none; }
+
+.social__item {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  fill: #f9f7f6; }
+  .social__item:not(:last-child) {
+    margin-right: 1.5rem; }
