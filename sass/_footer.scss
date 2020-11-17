@@ -1,0 +1,38 @@
+.footer {
+    padding: 8rem 0;
+    background-color: $color-secondary;
+    color: $color-grey-light-1;
+  
+    @include respond(tab-port) {
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+  
+    &__content {
+      grid-column: center-start/center-end;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &--copyright {
+      font-size: 1.4rem;
+    }
+  
+    &--social {
+      list-style: none;
+    }
+  }
+  
+  .social {
+    &__item {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      fill: $color-grey-light-1;
+  
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
