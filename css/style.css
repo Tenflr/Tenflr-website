@@ -245,6 +245,9 @@ body {
 .section-get-app .download-link__list {
   justify-content: center; }
 
+.section-privacy {
+  grid-column: center-start/center-end; }
+
 .menu__checkbox {
   display: none;
   visibility: hidden; }
@@ -434,9 +437,23 @@ body {
     fill: #101d2c; }
 
 .footer {
-  padding: 8rem 0;
+  padding: 8rem 0 0;
   background-color: #101d2c;
   color: #f9f7f6; }
+  .footer__terms {
+    text-align: center;
+    grid-column: center-start/center-end; }
+    .footer__terms--link {
+      display: inline-block;
+      text-decoration: none;
+      color: #f9f7f6;
+      font-family: inherit;
+      font-size: 1rem;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+      padding: 1rem 3rem; }
+      .footer__terms--link:not(:last-child) {
+        border-right: 1px solid #f9f7f6; }
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding-right: 3rem;
