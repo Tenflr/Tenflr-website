@@ -1,5 +1,24 @@
 .footer {
-    padding: 8rem 0;
+    &__terms {
+        text-align: center;
+        grid-column: center-start/center-end;
+
+        &--link {
+            display: inline-block;
+            text-decoration: none;
+            color: $color-grey-light-1;
+            font-family: inherit;
+            font-size: 1rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            padding: 1rem 3rem;
+
+            &:not(:last-child) {
+                border-right: 1px solid $color-grey-light-1;
+            }
+        }
+    }
+    padding: 8rem 0 0;
     background-color: $color-secondary;
     color: $color-grey-light-1;
   
