@@ -242,6 +242,9 @@ body {
       .section-get-app__content {
         width: 85%; } }
 
+.section-get-app .download-link__list {
+  justify-content: center; }
+
 .menu__checkbox {
   display: none;
   visibility: hidden; }
