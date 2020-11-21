@@ -26,3 +26,16 @@ body {
 .text--normal {
   line-height: 1.8;
 }
+
+.privacy-table-content {
+  text-decoration: none;
+  color: $color-secondary;
+  font-family: inherit;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  transition: all .2s;
+
+  &:hover {
+    color: $color-grey-dark-1;
+  }
+}
