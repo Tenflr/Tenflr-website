@@ -111,6 +111,23 @@ body {
         margin-right: 1rem;
         margin-left: 1rem; } }
 
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: .2rem;
+  font-weight: 200;
+  display: inline-block;
+  padding: 2rem 4rem;
+  background-color: #101d2c;
+  border-radius: 10rem;
+  border: 1px solid #101d2c;
+  transition: all .3s; }
+  .btn:hover {
+    background-color: #fff;
+    color: #101d2c; }
+
 .feature {
   display: flex;
   align-items: center;
